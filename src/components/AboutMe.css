@@ -1,0 +1,27 @@
+.about-me {
+    text-align: right;
+    padding: 1vw;
+    background-color: var(--primary-background-color);
+    border-radius: 1vw;
+    color: var(--secondary-text-color);
+}
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    padding: 2vw;
+    font-family: 'Press Start 2P';
+}
+.about-me-image img {
+    width: 30vw;
+    height: 40vw;
+    object-fit: cover;
+    border-radius: 20%;
+}
+.about-me-content {
+    max-width: 60vw;
+    margin-top: 0vw;
+    margin-right: 0.5vw;
+}

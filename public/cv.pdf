@@ -1,0 +1,3 @@
+The file /mrmara_website/public/cv.pdf is intended to be a PDF document. Since I cannot generate a PDF file directly, you will need to create your CV in a PDF format using a word processor or design tool, and then save it as cv.pdf in the specified directory.
+
+Please ensure that the PDF contains your professional information, including your experience as a robotics engineer, your skills in ROS2 and autonomous vehicles, and any other relevant details you wish to include. Once you have created the PDF, place it in the /mrmara_website/public/ directory.

@@ -1,0 +1,82 @@
+.navbar {
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: var(--primary-text-color);
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background: var(--hoovering-color);
+    border-radius: 4px;
+    text-decoration: none;
+}
+.navbar-container{
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
+    display: flex;
+    font-family: 'Press Start 2P', cursive;
+    height: 5vh;
+    width: 100vw;
+}
+.navbar-title {
+    width: 20vw;
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar-menu {
+    text-align: right;
+    width: 70vw;
+    height: 10vh;
+}
+.navbar-links {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    width: 10vw;
+    cursor: pointer;
+}
+.navbar-links:hover {
+    color: var(--secondary-text-color);
+}
+.navbar-empty {
+    width: 10vw;
+    height: 10vh;
+}
+.mobile-navbar-menu-list.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mobile-navbar-menu-list {
+    display: none;
+}
+.mobile-navbar-menu-icon {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+.mobile-navbar-menu-icon.active {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+.mobile-navbar-links {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    width: 10vw;
+    cursor: pointer;
+}
+.mobile-navbar-links:hover {
+    color: var(--secondary-text-color);
+}
+.mobile-navbar-empty {
+    width: 100%;
+    height: 10vh;
+}
