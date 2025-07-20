@@ -38,19 +38,21 @@ const Navbar = () => {
           </div>
         ) : (
           <div className="mobile-navbar-menu">
-            <button
-              className={`mobile-navbar-menu-icon ${
-                mobileMenuOpen ? "active" : ""
-              }`}
-              onClick={toggleMobileMenu}
-            >
-              {/* Use FontAwesomeIcon component */}
-              {mobileMenuOpen ? (
-                <FontAwesomeIcon icon={faTimes} /> // Close icon when menu is open
-              ) : (
-                <FontAwesomeIcon icon={faBars} /> // Hamburger icon when menu is closed
-              )}
-            </button>
+            <div className="mobile-navbar-icon">
+              <button
+                className={`mobile-navbar-menu-icon ${
+                  mobileMenuOpen ? "active" : ""
+                }`}
+                onClick={toggleMobileMenu}
+              >
+                {/* Use FontAwesomeIcon component */}
+                {mobileMenuOpen ? (
+                  <FontAwesomeIcon icon={faTimes} /> // Close icon when menu is open
+                ) : (
+                  <FontAwesomeIcon icon={faBars} /> // Hamburger icon when menu is closed
+                )}
+              </button>
+            </div>
             {/* Mobile navigation menu, conditionally rendered/styled */}
             <div
               className={`mobile-navbar-menu-list ${

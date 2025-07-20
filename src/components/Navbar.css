@@ -43,8 +43,14 @@
 }
 .mobile-navbar-menu {
     width: 40vw;
-    height: 10vh;
     direction: rtl;
+}
+.mobile-navbar-icon {
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
 }
 .mobile-navbar-menu-list.active {
     display: flex;
@@ -59,15 +65,16 @@
 
 .mobile-navbar-menu-icon {
     background-color: var(--primary-background-color);
-    color: var(--primary-text-color);
+    color: var(--hoovering-color);
     float: right;
     position: fixed;
     margin-right: 15vw;
+    size: lg;
 }
 
 .mobile-navbar-menu-icon.active {
     background-color: var(--primary-background-color);
-    color: var(--primary-text-color);
+    color: var(--hoovering-color);
 }
 
 .mobile-navbar-links {

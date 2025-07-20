@@ -43,3 +43,44 @@
     color: var(--primary-text-color);
     text-decoration: underline;
 }   
+.mobile-about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    padding: 2vw;
+    font-family: 'Press Start 2P';
+}
+.mobile-about-me-image img {
+    width: 100vw;
+    height: 30vh;
+    object-fit: cover;
+    object-position: 55% 10%;
+    border-radius: 10%;
+    margin-left: 5vw;
+}
+.mobile-about-me-content {
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
+    padding: 2vw;
+    width: 100vw;
+}
+.mobile-about-me-content h1 {
+    font-size: 5.5vw;
+    margin-bottom: 1vw;
+    margin-left: 5vw;
+    color: var(--paragraph-title-text-color);
+}
+.mobile-about-me-content p {
+    font-size: 3vw;
+    margin-left: 5vw;
+    margin-right: 1vw;
+    line-height: 2.5vh;
+}
+.mobile-about-me-content a {
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    text-decoration: underline;
+}   
