@@ -47,9 +47,9 @@ const Navbar = () => {
               >
                 {/* Use FontAwesomeIcon component */}
                 {mobileMenuOpen ? (
-                  <FontAwesomeIcon icon={faTimes} /> // Close icon when menu is open
+                  <FontAwesomeIcon icon={faTimes} size='2x' /> // Close icon when menu is open
                 ) : (
-                  <FontAwesomeIcon icon={faBars} /> // Hamburger icon when menu is closed
+                  <FontAwesomeIcon icon={faBars} size='2x' /> // Hamburger icon when menu is closed
                 )}
               </button>
             </div>

@@ -41,17 +41,19 @@
     width: 50vw;
     height: 10vh;
 }
+
 .mobile-navbar-menu {
     width: 40vw;
     direction: rtl;
 }
+
 .mobile-navbar-icon {
     width: 10vw;
-    height: 10vh;
     display: flex;
     align-items: top;
     justify-content: center;
 }
+
 .mobile-navbar-menu-list.active {
     display: flex;
     flex-direction: column;
@@ -67,9 +69,12 @@
     background-color: var(--primary-background-color);
     color: var(--hoovering-color);
     float: right;
-    position: fixed;
     margin-right: 15vw;
-    size: lg;
+    display: flex;
+    border-radius: 0px;
+    border-color: var(--primary-background-color);
+    border-width: 1px;
+    border-style: solid;
 }
 
 .mobile-navbar-menu-icon.active {
