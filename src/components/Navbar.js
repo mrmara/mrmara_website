@@ -2,14 +2,11 @@
 import React, { useState } from "react"; // Import useState
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import useMediaQuery from "../hooks/useMediaQuery"; // Import the custom hook
+import isDesktop from "../hooks/useMediaQuery"; // Import the custom hook
 // Import Font Awesome components and icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"; // faBars for hamburger, faTimes for close
 const Navbar = () => {
-  // Define your breakpoint for desktop (e.g., 768px)
-  const isDesktop = useMediaQuery("(min-width: 768px)");
-
   // State for managing the mobile menu visibility
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -21,10 +18,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
-          Mr. Mara
-        </Link>
-        {isDesktop ? (
+        <div className="navbar-title">
+          <Link to="/" className="navbar-links">
+            Mr. Mara
+          </Link>
+        </div>
+        {isDesktop() ? (
           // Content for Desktop
           <div className="navbar-menu">
             <Link to="/about" className="navbar-links">
@@ -40,7 +39,9 @@ const Navbar = () => {
         ) : (
           <div className="mobile-navbar-menu">
             <button
-              className={`mobile-navbar-menu-icon ${mobileMenuOpen ? "active" : ""}`}
+              className={`mobile-navbar-menu-icon ${
+                mobileMenuOpen ? "active" : ""
+              }`}
               onClick={toggleMobileMenu}
             >
               {/* Use FontAwesomeIcon component */}
@@ -52,8 +53,10 @@ const Navbar = () => {
             </button>
             {/* Mobile navigation menu, conditionally rendered/styled */}
             <div
-              className={`mobile-navbar-menu-list ${mobileMenuOpen ? "active" : ""}`}
-            > 
+              className={`mobile-navbar-menu-list ${
+                mobileMenuOpen ? "active" : ""
+              }`}
+            >
               <Link
                 to="/about"
                 className="mobile-navbar-links"

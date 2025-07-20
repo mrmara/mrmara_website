@@ -34,17 +34,11 @@ a:hover {
     width: 100%;
 }
 
-.section {
-    padding: 20px;
-    background: var(--primary-background-color);
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 :root {
     --primary-background-color: #000000;
     --primary-text-color: #ffffff;
     --secondary-background-color: #00ff0d;
-    --secondary-text-color: #00ff0d;
+    --secondary-text-color: #000000;
+    --paragraph-title-text-color: #365237;;
     --hoovering-color: #00ff0d;
 }

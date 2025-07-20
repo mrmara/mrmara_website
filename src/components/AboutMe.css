@@ -1,9 +1,4 @@
 .about-me {
-    text-align: right;
-    padding: 1vw;
-    background-color: var(--primary-background-color);
-    border-radius: 1vw;
-    color: var(--secondary-text-color);
 }
 .about-me-container {
     display: flex;
@@ -16,12 +11,35 @@
 }
 .about-me-image img {
     width: 30vw;
-    height: 40vw;
+    height: 60vh;
     object-fit: cover;
-    border-radius: 20%;
+    object-position: 55% 10%;
+    border-radius: 10%;
 }
 .about-me-content {
-    max-width: 60vw;
-    margin-top: 0vw;
-    margin-right: 0.5vw;
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
+    padding: 2vw;
+    width: 50vw;
 }
+.about-me-content h1 {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+    color: var(--paragraph-title-text-color);
+}
+.about-me-content p {
+    font-size: 1vw;
+    margin-bottom: 1vw;
+    line-height: 2.5vh;
+}
+.buzzword {
+    color: var(--secondary-background-color);
+    font-weight: bold;
+    font-style: italic;
+}
+.about-me-content a {
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    text-decoration: underline;
+}   

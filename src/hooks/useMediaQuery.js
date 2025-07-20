@@ -34,5 +34,7 @@ const useMediaQuery = (query) => {
 
   return matches;
 };
+// Example usage of useMediaQuery inside a React component or another custom hook
+const IsDesktop = () => useMediaQuery("(min-width: 900px)"); // Define your breakpoint for desktop (e.g., 768px)
 
-export default useMediaQuery;
+export default IsDesktop;

@@ -1,30 +1,46 @@
-import React from 'react';
-import './AboutMe.css';
+import React from "react";
+import "./AboutMe.css";
+//import photoFun1 from "../assets/photo_fun1.jpeg";
+import photoFun2 from "../assets/photo_fun2.jpeg";
+import isDesktop from "../hooks/useMediaQuery"; // Import the custom hook
+import Typewriter from "../hooks/useTypeWriter"; // Import the Typewriter component
 
 const AboutMe = () => {
-    return (
-        <section className="about-me">
-            <div className="about-me-container">
-                <div className="about-me-image">
-                    <img src="https://picsum.photos/600" alt="Antonio Marangi"/>
-                </div>
-                <div className="about-me-content">
-                    <h1>About Me</h1>
-                    <p>
-                        I am a Robotics Engineer specializing in ROS2 and autonomous vehicles. 
-                        My passion lies in the intersection of IoT and robotics, where I strive to 
-                        create innovative solutions that enhance automation and connectivity.
-                    </p>
-                    <p>
-                        With a strong background in robotics, I have worked on various projects 
-                        that involve designing and implementing robotic systems. I am always eager 
-                        to learn and explore new technologies that can push the boundaries of what 
-                        is possible in the field of robotics.
-                    </p>
-                </div>
-            </div>
-        </section>
-    );
+  return (
+    <section className="about-me">
+      <div className="about-me-container">
+        <div className="about-me-image">
+          <img src={photoFun2} alt="Antonio Marangi" />
+        </div>
+        <div className="about-me-content">
+          <h1>About Me</h1>
+          <p>
+            <Typewriter
+              text="I'm a Robotics Engineer with a focus on ROS2 and autonomous vehicles.
+                    I'm really passionate about robots, IoT, and DIY projects.
+                    I also love programming and have experience developing software for both robotics and IoT devices.
+                    I'm always on the lookout for new things to build and experiment with.
+                    With a solid background in robotics, I've worked on a variety of projects
+                    involving the design and implementation of robotic systems.
+                    Right now, I'm working at Alba-Robot, a company that specializes in autonomous vehicles,
+                    where I'm part of the development team.
+                    In my free time, I'm building a personal project: an open-source, modular smart home assistant."
+              speed={60}
+              increase={1.5}
+              buzzwords={[
+                "ROS2",
+                "Autonomous Vehicles",
+                "IoT",
+                "DIY",
+                "open source",
+                "smart home assistant",
+              ]}
+            />
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default AboutMe;

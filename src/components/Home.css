@@ -1,0 +1,41 @@
+.home {}
+
+.home-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.home-container h1 {
+    color: var(--primary-text-color);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.0vw;
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.mobile-home-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.mobile-home-container h1 {
+    color: var(--primary-text-color);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3.5vw;
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;
+    line-height: 2.5vh;
+}
+
+.home-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+}
+.home-image {
+    width: 60vw;
+    max-width: 400px;
+    height: auto;
+}
