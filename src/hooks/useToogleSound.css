@@ -1,0 +1,16 @@
+.music-menu-icon {
+    background-color: var(--primary-background-color);
+    color: var(--hoovering-color);
+    border-radius: 0px;
+    border-color: var(--primary-background-color);
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.music-menu-icon.active {
+    background-color: var(--primary-background-color);
+    color: var(--hoovering-color);
+    cursor: pointer;
+
+}

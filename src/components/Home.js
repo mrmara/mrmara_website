@@ -3,6 +3,7 @@ import './Home.css';
 import homepageImg from '../assets/homepage_img.png'; // Import the image
 import isDesktop from "../hooks/useMediaQuery"; // Import the custom hook
 
+
 const Home = () => {
     return (
       <section className="home">

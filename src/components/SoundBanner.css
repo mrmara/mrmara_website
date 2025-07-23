@@ -1,0 +1,25 @@
+.sound-banner {
+    font-family: 'Press Start 2P', cursive;
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
+    text-align: center;
+    font-size: 1.0rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    gap: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  .sound-banner button {
+    background: var(--secondary-background-color);
+    font-family: 'Press Start 2P', cursive;
+    color: var(--secondary-text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
