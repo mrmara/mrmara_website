@@ -12,7 +12,7 @@ const AboutMe = () => {
       <div className="about-me-desktop">
       <div className="about-me-container">
         <div className="about-me-image">
-          <img src={photoFun2} alt="Antonio Marangi" />
+          <img src={photoFun2}  alt="Antonio Marangi Engineer ROS2 Robot Autonomous IoT" />
         </div>
         <div className="about-me-content">
           <h1>About Me</h1>

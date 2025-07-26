@@ -8,7 +8,7 @@ const Home = () => {
     return (
       <section className="home">
         <div className="home-image-container">
-          <img src={homepageImg} alt="Robot" className="home-image" />
+          <img src={homepageImg} alt="Antonio Marangi Engineer ROS2 Robot Autonomous IoT" className="home-image" />
         </div>
         {isDesktop() ? (
         <div className="home-container">
