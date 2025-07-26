@@ -1,0 +1,89 @@
+.github-repos {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.repo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+}
+
+.repo-card h3 {
+    color: var(--hoovering-color);
+}
+
+.repo-card {
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
+    border-radius: 0px;
+    padding: 1rem;
+    width: 25vw;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: none;
+}
+
+.repo-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: none;
+    background: var(--hoovering-color);
+    color: var(--secondary-text-color);
+}
+
+.repo-card:hover h3 {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: none;
+    background: var(--hoovering-color);
+    color: var(--secondary-text-color);
+}
+.mobile-github-repos {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.mobile-repo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+}
+
+.mobile-repo-card h3 {
+    color: var(--hoovering-color);
+}
+
+.mobile-repo-card {
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
+    padding: 1vw;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgb(9, 255, 0);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.mobile-repo-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.2);
+    background: var(--hoovering-color);
+    color: var(--secondary-text-color);
+}
+
+.mobile-repo-card:hover h3 {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: none;
+    background: var(--hoovering-color);
+    color: var(--secondary-text-color);
+}

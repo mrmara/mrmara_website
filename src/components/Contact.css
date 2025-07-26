@@ -25,9 +25,45 @@
     margin-bottom: 1vw;
     line-height: 2.5vh;
 }
-.contact ul li{
-    color: var(--hoovering-color);
-}
 .contact a{
     color: var(--hoovering-color);
+}
+.mobile-contact{
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: 'Press Start 2P';
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+    text-align: center;
+}
+.mobile-contact h1{
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    text-align: center
+}
+.mobile-contact h2{
+    background-color: var(--primary-background-color);
+    color: var(--paragraph-title-text-color);
+    font-size: 1.5rem;
+    margin-bottom: 1vw;
+    text-align: center;
+}
+.mobile-contact p {
+    color: var(--primary-text-color);
+    font-size: 0.8rem;
+    margin-bottom: 1vw;
+    line-height: 2.5vh;
+}
+.mobile-contact a {
+    color: var(--hoovering-color);
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 0.6rem;         /* Increased font size */
+    padding: 1rem 2rem;        /* Added padding for a larger box */
+    box-shadow: 0 2px 8px rgb(9, 255, 0);
+    border-radius: 10px;
+    display: inline-block;     /* Ensures padding and box-shadow apply nicely */
+    min-width: 180px;          /* Optional: minimum width */
 }
