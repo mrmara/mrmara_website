@@ -35,6 +35,9 @@ const Navbar = () => {
             <Link to="/contact" className="navbar-links">
               Contact
             </Link>
+            <Link to="/owncloud" className="navbar-links">
+              Owncloud
+            </Link>
           </div>
         ) : (
           <div className="mobile-navbar-menu">
@@ -79,6 +82,13 @@ const Navbar = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact
+              </Link>
+              <Link
+                to="/owncloud"
+                className="mobile-navbar-links"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                OwnCloud
               </Link>
               <div className="mobile-navbar-empty"></div>{" "}
               {/* Added empty div for spacing */}
