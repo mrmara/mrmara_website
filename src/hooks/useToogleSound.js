@@ -49,11 +49,11 @@ export const ToogleSoundButton = () => {
   const { isSoundOn, sound_on, sound_off } = useSoundContext(); // Updated to use useSoundContext
   return isSoundOn ? (
     <button onClick={sound_off} className="music-menu-icon">
-      <FontAwesomeIcon icon={faVolumeMute} size="2xl" />
+      <FontAwesomeIcon icon={faVolumeHigh} size="2xl" />
     </button>
   ) : (
     <button onClick={sound_on} className="music-menu-icon">
-      <FontAwesomeIcon icon={faVolumeHigh} size="2xl" />
+      <FontAwesomeIcon icon={faVolumeMute} size="2xl" />
     </button>
   );
 };
