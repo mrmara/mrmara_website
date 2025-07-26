@@ -6,11 +6,11 @@ const Owncloud = () => {
 
   useEffect(() => {
     // Try to fetch the target URL to check if it's reachable
-    fetch("http://home-server", { mode: "no-cors" })
+    fetch("https://home-server.tail7d0bd6.ts.net/", { mode: "no-cors" })
       .then(() => {
         console.log("Successfully connected to home-server");
         // Redirect to the home-server URL
-        window.location.replace("http://home-server");
+        window.location.replace("https://home-server.tail7d0bd6.ts.net/");
       })
       .catch(() => {
         console.error("Failed to connect to home-server");
