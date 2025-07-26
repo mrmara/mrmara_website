@@ -8,14 +8,17 @@ const Owncloud = () => {
     // Try to fetch the target URL to check if it's reachable
     fetch("http://home-server", { mode: "no-cors" })
       .then(() => {
+        console.log("Successfully connected to home-server");
+        // Redirect to the home-server URL
         window.location.replace("http://home-server");
       })
       .catch(() => {
+        console.error("Failed to connect to home-server");
         setError(true);
       });
 
     // Fallback: if fetch doesn't error but redirect fails, show error after timeout
-    const timer = setTimeout(() => setError(true), 2000);
+    const timer = setTimeout(() => setError(true), 4000);
     return () => clearTimeout(timer);
   }, []);
 
